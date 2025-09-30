@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Odyssey Taverna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏛️ The Odyssey Taverna</h1>
+    <p>Feast Like a Hero of Myth 🍇🍷</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservations">Reservations</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Step into <strong>The Odyssey Taverna</strong>, where every meal tells a story. Inspired by Homer’s epic, we invite you to dine like Odysseus, savoring the flavors of ancient Greece — from the shores of Troy to the halls of Ithaca.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu Highlights 🥙</h2>
+
+    <button class="accordion">Appetizers</button>
+    <div class="panel">
+      <div class="menu-item"><strong>Lotus Eaters' Platter – $15</strong><br> Stuffed grape leaves, feta, olives, hummus & pita.</div>
+      <div class="menu-item"><strong>Helen’s Fire-Roasted Feta – $10</strong><br> Oven-baked feta, cherry tomatoes, honey, and chili.</div>
+      <div class="menu-item"><strong>Sirens’ Calamari – $12</strong><br> Lightly fried squid with lemon aioli.</div>
+      <div class="menu-item"><strong>Scylla’s Skewers – $13</strong><br> Grilled lamb skewers with tzatziki.</div>
+    </div>
+
+    <button class="accordion">Entrées</button>
+    <div class="panel">
+      <div class="menu-item"><strong>The Hero’s Gyro – $14</strong><br> Lamb, chicken, or falafel. Served with pita, tomato, onion, and tzatziki.</div>
+      <div class="menu-item"><strong>Polyphemus’ Plate – $18</strong><br> Grilled lamb shank with lemon potatoes.</div>
+      <div class="menu-item"><strong>Circe’s Vegetarian Moussaka – $16</strong><br> Layers of eggplant, potato, and béchamel.</div>
+      <div class="menu-item"><strong>Poseidon's Catch – $22</strong><br> Grilled whole branzino with herbs and lemon.</div>
+      <div class="menu-item"><strong>Penelope’s Pastitsio – $17</strong><br> Baked pasta with spiced beef and creamy béchamel.</div>
+    </div>
+
+    <button class="accordion">Desserts</button>
+    <div class="panel">
+      <div class="menu-item"><strong>Olive Oil Cake of Olympus – $8</strong><br> Citrus cake with Greek yogurt glaze.</div>
+      <div class="menu-item"><strong>Telemachus’ Baklava – $7</strong><br> Phyllo, walnuts, and honey.</div>
+      <div class="menu-item"><strong>Calypso’s Fig Delight – $9</strong><br> Warm figs stuffed with nuts and drizzled with honey.</div>
+    </div>
+
+    <button class="accordion">Drinks</button>
+    <div class="panel">
+      <div class="menu-item"><strong>Ambrosia Sangria – $10</strong><br> Red wine, citrus, and pomegranate.</div>
+      <div class="menu-item"><strong>Poseidon’s Punch – $12</strong><br> Ouzo, blue curaçao, lemon.</div>
+      <div class="menu-item"><strong>Ithacan Red (House Wine) – $8</strong><br> A robust dry red aged in oak barrels.</div>
+      <div class="menu-item"><strong>Cyclops Lager – $7</strong><br> A bold craft beer with a hoppy finish.</div>
+    </div>
+  </section>
+
+  <section id="reservations">
+    <h2>Reserve a Table 🍷</h2>
+    <form onsubmit="event.preventDefault(); alert('Reservation confirmed!');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="date" required />
+      <input type="time" required />
+      <select required>
+        <option value="">Party Size</option>
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="order">
+    <h2>Order Online 🛒</h2>
+    <form onsubmit="event.preventDefault(); alert('Order placed!');">
+      <textarea placeholder="Your Order (e.g., Hero’s Gyro x2)" required></textarea>
+      <input type="text" placeholder="Delivery Address" required />
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us 📞</h2>
+    <p>📍 Ithaca Plaza</p>
+    <p>☎️ (555) 123-ODYS</p>
+    <p>🌐 www.odysseytaverna.gr</p>
+    <p>📸 Follow us: @odysseytaverna</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Odyssey Taverna | Designed with mythic flair ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
